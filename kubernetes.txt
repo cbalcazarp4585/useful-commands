@@ -1,0 +1,14 @@
+# List namespaces
+kubectl get namespaces
+
+# Get nodes in a namespace
+kubectl get nodes -n <mynamespace> -o wide
+
+# Get pods in a namespace
+kubectl get pods -n <mynamespace> -o wide
+
+# Describe pods
+kubectl describe pods <my-pod> -n <mynamespace>
+
+# Shell into a pod
+kubectl exec -it <pod_name> -n <namespace> -- /bin/sh
