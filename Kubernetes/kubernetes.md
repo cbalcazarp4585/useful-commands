@@ -12,3 +12,6 @@ kubectl describe pods <my-pod> -n <mynamespace>
 
 ### Shell into a pod
 kubectl exec -it <pod_name> -n <namespace> -- /bin/sh
+
+### Create pods
+kubectl run <pod_name> --image=<imagename>
